@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taş Kağıt Makas Oyunu</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="tkm.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Taş Kağıt Makas Oyunu</h1>
+        </div>
+        
+        <h2>Sen <span class="player" id="player"></span> - Skor: <span class="playerScore" id="playerScore"></span></h2>
+        <div class="playerContainer">
+            <i class="icon fa-solid fa-hand-back-fist" title="Taş" id="tasP" onclick="select('tas')"></i>
+            <i class="icon fa-solid fa-hand" title="Kağıt" id="kagitP" onclick="select('kagit')"></i>
+            <i class="icon fa-solid fa-hand-scissors" title="Makas" id="makasP" onclick="select('makas')"></i>
+        </div>
+
+        <h2>Bilgisayar <span class="computer" id="computer"></span> - Skor: <span class="computerScore" id="computerScore"></span></h2>
+        <div class="computerContainer">
+
+            <i class="icon fa-solid fa-hand-back-fist" title="Taş" id="tasC"></i>
+            <i class="icon fa-solid fa-hand" title="Kağıt" id="kagitC"></i>
+            <i class="icon fa-solid fa-hand-scissors" title="Makas" id="makasC"></i>
+        </div>
+
+        <div class="resetContainer" id="resetContainer">
+            <i class="fa-solid fa-rotate" id="reset" title="Sıfırla"></i>
+        </div>
+
+        <div class="winner">
+            <h3 class="winnerPlayer" id="winnerPlayer"></h3>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="tkm.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 19px;
+    background: rgb(255, 255, 255);
+    color: black;
+    width: 500px;
+}
+
+.header {
+    background: palevioletred;
+    padding: 30px;
+    border-radius: 19px 19px 0px 0px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.playerContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+}
+
+.computerContainer {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.playerContainer .icon {
+    color: blue;
+    cursor: pointer;
+}
+.computerContainer .icon {
+    color: red;
+    cursor: pointer;
+}
+
+.resetContainer {
+    text-align: center;
+    font-size: 29px;
+    cursor: pointer;
+}
+
+.winner {
+    font-size: 30px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.selected {
+    color: black !important ;
+}
